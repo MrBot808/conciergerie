@@ -1,0 +1,563 @@
+<html lang="fr" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Parenthèse — Conciergerie à Hyères &amp; Alentours</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #faf9f6; /* Blanc cassé / Beige clair */
+            color: #1e293b; /* Slate 800 */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .text-navy {
+            color: #1B2A41; /* Bleu Marine Profond */
+        }
+        .bg-navy {
+            background-color: #1B2A41;
+        }
+        .text-gold {
+            color: #C5A059; /* Doré subtil */
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #faf9f6;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-[#1B2A41] selection:text-white">
+
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50 border-b border-stone-200/50 bg-[#faf9f6]/90 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-2 group">
+            <div class="text-navy transition-transform duration-500 group-hover:rotate-12">
+                <iconify-icon icon="solar:sun-2-linear" width="28" stroke-width="1.5"></iconify-icon>
+            </div>
+            <div class="flex flex-col">
+                <span class="text-xl font-medium text-navy tracking-tight leading-none">La Parenthèse</span>
+                <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 font-medium">Conciergerie</span>
+            </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center gap-8">
+            <a href="#services" class="text-sm font-medium text-stone-600 hover:text-navy transition-colors">Services</a>
+            <a href="#expertise" class="text-sm font-medium text-stone-600 hover:text-navy transition-colors">Expertises</a>
+            <a href="#locations" class="text-sm font-medium text-stone-600 hover:text-navy transition-colors">Secteur</a>
+            <a href="#temoignages" class="text-sm font-medium text-stone-600 hover:text-navy transition-colors">Témoignages</a>
+        </div>
+
+        <!-- CTA -->
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center h-10 px-6 text-xs uppercase tracking-wider font-medium text-white transition-all bg-navy hover:bg-[#2C3E50] rounded-full shadow-lg shadow-navy/20 hover:shadow-navy/30 hover:-translate-y-0.5">
+                Estimation Gratuite
+            </a>
+            <button class="md:hidden text-navy p-2">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24" stroke-width="1.5"></iconify-icon>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <!-- Background Image -->
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.unsplash.com/photo-1512918760513-95f1929c3d10?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Villa Hyères Piscine" class="w-full h-full object-cover">
+        <!-- Overlay Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-stone-900/30 via-stone-900/20 to-[#faf9f6]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center mt-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 text-white mb-8">
+            <iconify-icon icon="solar:map-point-linear" width="16"></iconify-icon>
+            <span class="text-xs font-medium tracking-wide uppercase">Hyères • Le Pradet • Carqueiranne • La Londe</span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl lg:text-8xl text-white font-medium mb-6 tracking-tight leading-[1.1] drop-shadow-sm">
+            Votre sérénité, <br> <span class="italic font-normal opacity-90">notre exigence.</span>
+        </h1>
+
+        <p class="text-lg md:text-xl text-stone-100 max-w-2xl mx-auto mb-10 font-light leading-relaxed drop-shadow-md">
+            Gestion complète de locations saisonnières et intendance de résidences secondaires.
+            On gère tout, vous ne gérez rien.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center h-12 px-8 text-sm uppercase tracking-widest font-medium text-navy bg-white hover:bg-stone-100 transition-colors rounded-full shadow-xl">
+                Découvrir nos services
+            </a>
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center h-12 px-8 text-sm uppercase tracking-widest font-medium text-white border border-white/30 hover:bg-white/10 transition-all rounded-full backdrop-blur-sm">
+                Estimer mon bien
+            </a>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-white/70">
+        <iconify-icon icon="solar:arrow-down-linear" width="24" stroke-width="1.5"></iconify-icon>
+    </div>
+</header>
+
+<!-- Intro / Values -->
+<section class="py-24 border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1613545325278-f24b0cae1224?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Intérieur Design" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-xl shadow-xl max-w-xs border border-stone-100">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="text-gold">
+                            <iconify-icon icon="solar:star-bold" width="20"></iconify-icon>
+                        </div>
+                        <span class="text-sm font-semibold text-navy">Service 5 Étoiles</span>
+                    </div>
+                    <p class="text-sm text-stone-500 italic">"Nous traitons chaque logement comme s'il s'agissait du nôtre."</p>
+                </div>
+            </div>
+
+            <div class="pl-0 md:pl-10">
+                <h2 class="text-3xl md:text-4xl text-navy font-medium mb-6 leading-tight">
+                    Une conciergerie locale, <br> humaine et transparente.
+                </h2>
+                <p class="text-stone-600 leading-relaxed mb-8 font-light">
+                    Basés à Hyères, nous comprenons les exigences du marché locatif de la Côte d'Azur. La Parenthèse Conciergerie n'est pas une simple agence, c'est votre partenaire de confiance sur place.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                    <div class="flex flex-col gap-2">
+                        <div class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-navy mb-2">
+                            <iconify-icon icon="solar:shield-check-linear" width="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-medium text-navy">Confiance &amp; Transparence</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed">Suivi en temps réel de vos locations et de vos revenus.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-navy mb-2">
+                            <iconify-icon icon="solar:heart-linear" width="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-medium text-navy">Expérience Unique</h3>
+                        <p class="text-sm text-stone-500 leading-relaxed">Accueil personnalisé et petites attentions pour vos voyageurs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-24 bg-white relative">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-gold text-xs font-semibold tracking-widest uppercase mb-3 block">Nos Prestations</span>
+            <h2 class="text-3xl md:text-4xl text-navy font-medium mb-6">Un accompagnement sur-mesure</h2>
+            <p class="text-stone-500 font-light">Que vous souhaitiez louer votre bien ou simplement le faire entretenir en votre absence.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="group p-8 rounded-2xl border border-stone-100 bg-[#faf9f6] hover:bg-navy hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-white text-navy flex items-center justify-center mb-6 shadow-sm group-hover:bg-white/10 group-hover:text-white transition-colors">
+                    <iconify-icon icon="solar:key-square-linear" width="24" stroke-width="1.5"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-medium text-navy mb-3 group-hover:text-white transition-colors">Gestion Complète</h3>
+                <p class="text-sm text-stone-500 leading-relaxed mb-6 group-hover:text-stone-300 transition-colors">
+                    Création d'annonces optimisées, shooting photo pro, gestion des tarifs et sélection rigoureuse des voyageurs.
+                </p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-xs text-stone-600 group-hover:text-stone-300">
+                        <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 group-hover:text-emerald-400"></iconify-icon>
+                        Multidiffusion (Airbnb, Booking)
+                    </li>
+                    <li class="flex items-center gap-2 text-xs text-stone-600 group-hover:text-stone-300">
+                        <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 group-hover:text-emerald-400"></iconify-icon>
+                        Assistance 7j/7
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="group p-8 rounded-2xl border border-stone-100 bg-[#faf9f6] hover:bg-navy hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-white text-navy flex items-center justify-center mb-6 shadow-sm group-hover:bg-white/10 group-hover:text-white transition-colors">
+                    <iconify-icon icon="solar:bath-linear" width="24" stroke-width="1.5"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-medium text-navy mb-3 group-hover:text-white transition-colors">Intendance &amp; Entretien</h3>
+                <p class="text-sm text-stone-500 leading-relaxed mb-6 group-hover:text-stone-300 transition-colors">
+                    Ménage professionnel, gestion du linge hôtelier, entretien piscine et jardin. Votre bien reste impeccable.
+                </p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-xs text-stone-600 group-hover:text-stone-300">
+                        <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 group-hover:text-emerald-400"></iconify-icon>
+                        Protocoles bionettoyage
+                    </li>
+                    <li class="flex items-center gap-2 text-xs text-stone-600 group-hover:text-stone-300">
+                        <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 group-hover:text-emerald-400"></iconify-icon>
+                        Maintenance technique
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="group p-8 rounded-2xl border border-stone-100 bg-[#faf9f6] hover:bg-navy hover:shadow-xl transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-white text-navy flex items-center justify-center mb-6 shadow-sm group-hover:bg-white/10 group-hover:text-white transition-colors">
+                    <iconify-icon icon="solar:home-linear" width="24" stroke-width="1.5"></iconify-icon>
+                </div>
+                <h3 class="text-xl font-medium text-navy mb-3 group-hover:text-white transition-colors">Sous-location Garantie</h3>
+                <p class="text-sm text-stone-500 leading-relaxed mb-6 group-hover:text-stone-300 transition-colors">
+                    Nous devenons votre locataire. Vous percevez un loyer fixe garanti chaque mois, nous gérons la sous-location légale.
+                </p>
+                <ul class="space-y-2 mb-6">
+                    <li class="flex items-center gap-2 text-xs text-stone-600 group-hover:text-stone-300">
+                        <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 group-hover:text-emerald-400"></iconify-icon>
+                        0% de vacance locative
+                    </li>
+                    <li class="flex items-center gap-2 text-xs text-stone-600 group-hover:text-stone-300">
+                        <iconify-icon icon="solar:check-circle-linear" class="text-emerald-500 group-hover:text-emerald-400"></iconify-icon>
+                        Entretien constant
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="#contact" class="inline-flex items-center gap-2 text-sm font-medium text-navy border-b border-navy/20 pb-1 hover:border-navy hover:text-[#C5A059] transition-all">
+                Voir tous nos services personnalisés
+                <iconify-icon icon="solar:arrow-right-linear"></iconify-icon>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Visual Break / Image Grid -->
+<section class="py-12 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 h-[500px]">
+        <div class="col-span-2 row-span-2 rounded-2xl overflow-hidden relative group">
+            <img src="https://images.unsplash.com/photo-1574643156929-51fa098b0394?q=80&amp;w=2073&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Jardin Méditerranéen">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors"></div>
+        </div>
+        <div class="col-span-1 rounded-2xl overflow-hidden relative group">
+            <img src="https://images.unsplash.com/photo-1556912173-3db9963f6bee?q=80&amp;w=2069&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Cuisine Design">
+        </div>
+        <div class="col-span-1 rounded-2xl overflow-hidden relative group">
+            <img src="https://images.unsplash.com/photo-1576128151287-6e3e528b12f2?q=80&amp;w=1974&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Détail Déco">
+        </div>
+        <div class="col-span-2 rounded-2xl overflow-hidden relative group">
+            <img src="https://images.unsplash.com/photo-1622372554761-d7037c225f11?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Piscine Azur">
+            <div class="absolute bottom-6 left-6 text-white z-10">
+                <p class="text-sm font-medium tracking-widest uppercase">Hyères &amp; Alentours</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Expertises Detail -->
+<section id="expertise" class="py-24 bg-[#F2F1ED]">
+    <div class="max-w-7xl mx-auto px-6">
+        <!-- Block 1 -->
+        <div class="flex flex-col md:flex-row items-center gap-16 mb-24">
+            <div class="flex-1 order-2 md:order-1">
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gold mb-6 shadow-sm">
+                    <iconify-icon icon="solar:smile-circle-linear" width="24"></iconify-icon>
+                </div>
+                <h3 class="text-3xl text-navy font-medium mb-4">L'Expérience Voyageurs</h3>
+                <p class="text-stone-600 mb-6 leading-relaxed font-light">
+                    Nous créons un livret d’accueil digital sur mesure, offrons un kit de bienvenue avec des produits locaux, et partageons nos meilleures adresses secrètes.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-sm text-stone-600">
+                        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                        Communication fluide avant, pendant et après le séjour.
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-600">
+                        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                        Intervention rapide en cas de besoin.
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 order-1 md:order-2">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Accueil Voyageurs" class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
+            </div>
+        </div>
+
+        <!-- Block 2 -->
+        <div class="flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1">
+                <img src="https://images.unsplash.com/photo-1562778612-e1e0cda9915c?q=80&amp;w=2070&amp;auto=format&amp;fit=crop" alt="Entretien Piscine" class="rounded-2xl shadow-xl w-full h-[400px] object-cover">
+            </div>
+            <div class="flex-1">
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-gold mb-6 shadow-sm">
+                    <iconify-icon icon="solar:water-drops-linear" width="24"></iconify-icon>
+                </div>
+                <h3 class="text-3xl text-navy font-medium mb-4">Entretien &amp; Intendance</h3>
+                <p class="text-stone-600 mb-6 leading-relaxed font-light">
+                    Au-delà du ménage, nous veillons sur vos extérieurs. Contrôle du pH des piscines, entretien des jardins méditerranéens, hivernage et ouverture de saison.
+                </p>
+                <ul class="space-y-3">
+                    <li class="flex items-center gap-3 text-sm text-stone-600">
+                        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                        Passages réguliers de surveillance (Home-sitting).
+                    </li>
+                    <li class="flex items-center gap-3 text-sm text-stone-600">
+                        <span class="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                        Coordination des artisans si réparations nécessaires.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Zone géographique -->
+<section id="locations" class="py-24 bg-navy text-white relative overflow-hidden">
+    <!-- Decoration -->
+    <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-emerald-900/20 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+        <h2 class="text-3xl md:text-4xl font-medium mb-8">Notre secteur d'intervention</h2>
+        <p class="text-stone-300 max-w-2xl mx-auto mb-12 font-light">
+            Nous intervenons exclusivement sur ce secteur pour garantir réactivité et qualité de service.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+            <div class="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+                <iconify-icon icon="solar:map-point-linear" class="text-emerald-400"></iconify-icon>
+                <span class="font-medium tracking-wide">Hyères</span>
+            </div>
+            <div class="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+                <iconify-icon icon="solar:map-point-linear" class="text-emerald-400"></iconify-icon>
+                <span class="font-medium tracking-wide">Le Pradet</span>
+            </div>
+            <div class="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+                <iconify-icon icon="solar:map-point-linear" class="text-emerald-400"></iconify-icon>
+                <span class="font-medium tracking-wide">Carqueiranne</span>
+            </div>
+            <div class="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm">
+                <iconify-icon icon="solar:map-point-linear" class="text-emerald-400"></iconify-icon>
+                <span class="font-medium tracking-wide">La Londe-les-Maures</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section id="temoignages" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-medium text-navy mb-16 text-center">La confiance de nos propriétaires</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-8 bg-stone-50 rounded-2xl relative">
+                <div class="text-gold mb-4 text-4xl opacity-30 font-serif">"</div>
+                <p class="text-stone-600 mb-6 italic font-light">
+                    Depuis que j'ai confié ma villa à La Parenthèse, je suis serein. Les revenus ont augmenté et je retrouve ma maison impeccable à chaque retour.
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-stone-200 overflow-hidden">
+                        <!-- Placeholder avatar -->
+                        <img src="https://i.pravatar.cc/150?img=68" alt="Client" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-navy">Marc D.</p>
+                        <p class="text-xs text-stone-500">Propriétaire à Carqueiranne</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 bg-stone-50 rounded-2xl relative">
+                <div class="text-gold mb-4 text-4xl opacity-30 font-serif">"</div>
+                <p class="text-stone-600 mb-6 italic font-light">
+                    Le service de sous-location est idéal pour moi. Un loyer garanti sans les soucis de gestion. L'équipe est très professionnelle.
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-stone-200 overflow-hidden">
+                        <img src="https://i.pravatar.cc/150?img=44" alt="Client" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-navy">Sophie L.</p>
+                        <p class="text-xs text-stone-500">Propriétaire à Hyères</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8 bg-stone-50 rounded-2xl relative">
+                <div class="text-gold mb-4 text-4xl opacity-30 font-serif">"</div>
+                <p class="text-stone-600 mb-6 italic font-light">
+                    Une équipe réactive et locale. Mes locataires laissent toujours des commentaires élogieux sur l'accueil et la propreté.
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-stone-200 overflow-hidden">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Client" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-navy">Jean-Pierre M.</p>
+                        <p class="text-xs text-stone-500">Propriétaire au Pradet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section id="contact" class="py-24 bg-[#faf9f6]">
+    <div class="max-w-4xl mx-auto px-6">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-stone-100 flex flex-col md:flex-row">
+            <div class="p-10 md:w-2/3">
+                <h2 class="text-2xl font-medium text-navy mb-2">Estimation gratuite</h2>
+                <p class="text-stone-500 text-sm mb-8">Obtenez une étude de rentabilité de votre bien sous 24h.</p>
+
+                <form class="space-y-5">
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-stone-500 uppercase tracking-wide">Nom</label>
+                            <input type="text" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-all" placeholder="Votre nom">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-stone-500 uppercase tracking-wide">Prénom</label>
+                            <input type="text" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-all" placeholder="Votre prénom">
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-xs font-medium text-stone-500 uppercase tracking-wide">Email</label>
+                        <input type="email" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-all" placeholder="exemple@email.com">
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-5">
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-stone-500 uppercase tracking-wide">Ville du bien</label>
+                            <select class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-navy transition-all text-stone-600">
+                                <option>Hyères</option>
+                                <option>Le Pradet</option>
+                                <option>Carqueiranne</option>
+                                <option>La Londe</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-medium text-stone-500 uppercase tracking-wide">Type</label>
+                            <select class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-navy transition-all text-stone-600">
+                                <option>Villa</option>
+                                <option>Appartement</option>
+                                <option>Résidence secondaire</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-xs font-medium text-stone-500 uppercase tracking-wide">Message</label>
+                        <textarea rows="3" class="w-full bg-stone-50 border border-stone-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-navy focus:ring-1 focus:ring-navy transition-all" placeholder="Parlez-nous de votre projet..."></textarea>
+                    </div>
+
+                    <button type="button" class="w-full bg-navy text-white font-medium text-sm uppercase tracking-widest py-4 rounded-lg hover:bg-[#2C3E50] transition-colors shadow-lg shadow-navy/20">
+                        Envoyer ma demande
+                    </button>
+                </form>
+            </div>
+            <div class="bg-navy p-10 md:w-1/3 flex flex-col justify-between text-white relative overflow-hidden">
+                <div class="absolute inset-0 bg-emerald-900/20"></div>
+                <div class="relative z-10">
+                    <h3 class="text-xl font-medium mb-6">Contact direct</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-3">
+                            <iconify-icon icon="solar:phone-calling-linear" width="20" class="text-emerald-400 mt-0.5"></iconify-icon>
+                            <div>
+                                <span class="block text-xs text-stone-400 mb-1">Téléphone</span>
+                                <a href="#" class="font-medium hover:text-emerald-400 transition-colors">06 00 00 00 00</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <iconify-icon icon="solar:letter-linear" width="20" class="text-emerald-400 mt-0.5"></iconify-icon>
+                            <div>
+                                <span class="block text-xs text-stone-400 mb-1">Email</span>
+                                <a href="#" class="font-medium hover:text-emerald-400 transition-colors">contact@laparenthese.fr</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative z-10 pt-10">
+                    <p class="text-xs text-stone-400 leading-relaxed">
+                        Nous répondons à toutes les demandes sous 24h ouvrées.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy border-t border-white/5 pt-16 pb-8 text-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div class="col-span-1 md:col-span-1">
+                <a href="#" class="flex items-center gap-2 mb-6">
+                    <iconify-icon icon="solar:sun-2-linear" width="24" class="text-white"></iconify-icon>
+                    <span class="text-lg font-medium tracking-tight">La Parenthèse</span>
+                </a>
+                <p class="text-sm text-stone-400 font-light leading-relaxed">
+                    Conciergerie haut de gamme à Hyères et ses environs. Gestion locative, intendance et services sur-mesure.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold uppercase tracking-wider mb-4 text-stone-300">Services</h4>
+                <ul class="space-y-3 text-sm text-stone-400">
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">Gestion locative</a></li>
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">Sous-location</a></li>
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">Intendance &amp; Vigilance</a></li>
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">Aménagement &amp; Déco</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold uppercase tracking-wider mb-4 text-stone-300">Liens utiles</h4>
+                <ul class="space-y-3 text-sm text-stone-400">
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">Qui sommes-nous ?</a></li>
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">FAQ</a></li>
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">Mentions Légales</a></li>
+                    <li><a href="#" class="hover:text-emerald-400 transition-colors">CGV</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-sm font-semibold uppercase tracking-wider mb-4 text-stone-300">Réseaux</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-emerald-600 transition-colors text-white">
+                        <iconify-icon icon="mdi:instagram" width="20"></iconify-icon>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-600 transition-colors text-white">
+                        <iconify-icon icon="mdi:facebook" width="20"></iconify-icon>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-blue-500 transition-colors text-white">
+                        <iconify-icon icon="mdi:linkedin" width="20"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-stone-500">
+            <p>© 2024 La Parenthèse Conciergerie. Tous droits réservés.</p>
+            <p>Conçu avec soin à Hyères.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body></html>
